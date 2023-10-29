@@ -1,0 +1,96 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/Images/image1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .login-title {
+    text-align: center;
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    width: 380px;
+    margin: 0 auto;
+    padding:60px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  
+  .login-button {
+    margin-top: 30px;
+    margin-left: auto; 
+    margin-right: auto;
+    display: block;
+  }
+
+  .guest-login-button{
+    margin-top: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+    display: block;
+    background-color: grey;
+    border-color: #000;
+
+  }
+  
+  .forgot-password-link {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .forgot-password-link a{
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgot-password-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .create-account-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .create-account-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .create-account-link a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,38 @@
+<!-- cart.component.html -->
+<app-navbar></app-navbar>
+
+<div class="cart-container">
+  <h2>Cart Items</h2>
+  <div class="cart-item-container">
+    <ng-container *ngIf="cartItems.length > 0; else emptyCart">
+      <div class="cart-item" *ngFor="let cartItem of cartItems">
+        <h3>{{ cartItem.strMeal }}</h3>
+        <img [src]="cartItem.strMealThumb" alt="Meal Image">
+        <p class="category">{{ cartItem.strCategory }}</p>
+        <div class="price-container">
+          <span class="currency">&#8377;</span>
+          <span class="price">{{ cartItem.strPrice }}</span>
+        </div>
+        <div class="delete-container">
+          <button (click)="deleteCartItem(cartItem)" class="delete-button">
+            <i class="pi pi-trash"></i>
+          </button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <ng-template #emptyCart>
+    <div class="empty-cart-message">
+      Your cart is empty.
+    </div>
+  </ng-template>
+  <div class="cart-summary" *ngIf="cartItems.length > 0">
+    <div class="total-price">
+      <p>Total:</p>
+      <p class="currency">&#8377;</p>
+      <p class="price">{{ calculateTotalPrice() }}</p>
+    </div>
+  </div>
+
+  <button class="place-order-button" (click)="payNow()" *ngIf="cartItems.length > 0">Place Order</button>
+</div>

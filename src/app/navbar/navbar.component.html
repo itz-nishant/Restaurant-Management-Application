@@ -1,0 +1,16 @@
+<header>
+    <nav>
+      <div class="navbar-left">
+        <a routerLink="/dashboard">Restaurant Management</a>
+      </div>
+      <div class="navbar-right">
+        <a routerLink="/dashboard" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Home</a>
+        <a routerLink="/menu" routerLinkActive="active">Menu</a>
+        <a routerLink="/notifications" class="notification-icon-link">
+          <i class="pi pi-bell" [ngClass]="{'notification-icon': showNotifications}"></i>
+        </a>
+        <p-menubar [model]="items"></p-menubar>
+      </div>
+    </nav>
+  </header>
+  

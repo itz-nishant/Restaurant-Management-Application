@@ -1,0 +1,34 @@
+<div class="login-container">
+    <h1 class="login-title">Login</h1>
+  
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+      <div class="form-field">
+        <label for="username">Username:</label>
+        <input id="username" type="text" formControlName="email" pInputText class="input-field"
+          placeholder="Enter your username">
+        <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="error-message">
+          Username is required.
+        </div>
+      </div>
+  
+      <div class="form-field">
+        <label for="password">Password:</label>
+        <input id="password" type="password" formControlName="password" pInputText class="input-field"
+          placeholder="Enter your password">
+        <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="error-message">
+          Password is required.
+        </div>
+      </div>
+  
+      <button type="submit" pButton label="Login" [disabled]="!loginForm.valid" class="login-button"></button>
+  
+      <div class="create-account-link">
+        <p>Don't have an account?</p>
+        <a routerLink="/register">Create New Account</a>
+      </div>
+      <div>
+        <button (click)="guestLogin()" pButton label="Guest Login" class="guest-login-button"></button>
+      </div>
+    </form>
+  </div>
+  

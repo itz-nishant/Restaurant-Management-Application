@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<div class="notification-container">
+    <h2>Notifications</h2>
+    <div *ngIf="notifications.length === 0" class="empty-notification p-text-center">
+      No new notifications.
+    </div>
+    <div class="notification-item p-shadow-3" *ngFor="let notification of notifications">
+      <h3>{{ notification.title }}</h3>
+      <p>{{ notification.message }}</p>
+    </div>
+  </div>
+  

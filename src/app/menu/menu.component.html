@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+
+<div class="menu-container">
+  <div class="menu-card" *ngFor="let menuItem of menuItems">
+    <h2>{{ menuItem.strMeal }}</h2>
+    <div class="image-container">
+      <img [src]="menuItem.strMealThumb" alt="Meal Image" class="meal-image">
+    </div>
+    <p class="category">{{ menuItem.strCategory }}</p>
+    <div class="price-container">
+      <span class="currency">&#8377;</span>
+      <span class="price">{{ menuItem.strPrice }}</span>
+    </div>
+    <button pButton label="Add to Cart" (click)="addItemToCart(menuItem)" class="p-button-raised p-button-rounded"></button>
+  </div>
+</div>

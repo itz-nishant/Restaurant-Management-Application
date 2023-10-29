@@ -1,0 +1,79 @@
+{
+  "menu": [
+    {
+      "idMeal": "52977",
+      "strMeal": "Corba",
+      "strCategory": "Side",
+      "strArea": "Turkish",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/58oia61564916529.jpg",
+      "strcurrency": "INR",
+      "strPrice": "299"
+    },
+    {
+      "idMeal": "53060",
+      "strMeal": "Burek",
+      "strCategory": "Side",
+      "strArea": "Croatian",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg",
+      "strcurrency": "INR",
+      "strPrice": "359"
+    
+    },
+    {
+      "idMeal": "53065",
+      "strMeal": "Sushi",
+      "strCategory": "Seafood",
+      "strArea": "Japanese",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg",
+      "strcurrency": "INR",
+      "strPrice": "499"
+    },
+    {
+      "idMeal": "52978",
+      "strMeal": "Kumpir",
+      "strCategory": "Side",
+      "strArea": "Turkish",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/mlchx21564916997.jpg",
+      "strcurrency": "INR",
+      "strPrice": "259"
+    },
+    {
+      "idMeal": "53069",
+      "strMeal": "Bistek",
+      "strCategory": "Beef",
+      "strArea": "Filipino",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/4pqimk1683207418.jpg",
+      "strcurrency": "INR",
+      "strPrice": "399"
+    },
+    {
+      "idMeal": "53026",
+      "strMeal": "Tamiya",
+      "strCategory": "Vegetarian",
+      "strArea": "Egyptian",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg",
+      "strcurrency": "INR",
+      "strPrice": "599"
+    },
+    {
+      "idMeal": "52971",
+      "strMeal": "Kafteji",
+      "strCategory": "Vegetarian",
+      "strArea": "Tunisian",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/1bsv1q1560459826.jpg",
+      "strcurrency": "INR",
+      "strPrice": "499"
+    },
+    {
+      "idMeal": "52844",
+      "strMeal": "Lasagne",
+      "strDrinkAlternate": null,
+      "strCategory": "Pasta",
+      "strArea": "Italian",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg",
+      "strcurrency": "INR",
+      "strPrice": "199"
+      
+    }
+  ]
+}
